@@ -207,11 +207,4 @@ handlePlayerControls() {
     player.update();
   }
 }
-handleGrass(index){
-  animals[index-1].overlap(grass, function(collector, collected){
-    player.score+=20;
-    player.update();
-    collected.remove();
-  });
-}
 }
